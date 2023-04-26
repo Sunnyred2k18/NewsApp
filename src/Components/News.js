@@ -16,7 +16,6 @@ export class News extends Component {
     async componentDidMount() {
         console.log("CDM");
         let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=9fc3535193334023a2b205323ba6b22c";
-        //  let url2 = "https://newsapi.org/v2/everything?q=tesla&from=2023-03-24&sortBy=publishedAt&apiKey=9fc3535193334023a2b205323ba6b22c"
         let data = await fetch(url);
         let parsedData = await data.json()
         console.log(parsedData);
